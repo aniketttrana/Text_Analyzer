@@ -9,6 +9,7 @@ export default function TextForm(props) {
     let newText=text.toUpperCase();
 
 setText(newText)
+props.showsAlert("Converted to Upper Case","Success");
   }
 
   const handleLoClick=()=>{
@@ -16,11 +17,12 @@ setText(newText)
     let newText=text.toLowerCase();
 
 setText(newText)
+props.showsAlert("Converted to Lower Case","Success");
   }
   const handleClClick=()=>{
     console.log("Clicked" +text);
     let newText="";
-
+    props.showsAlert("All text Cleared","Success");
 setText(newText)
   }
 
@@ -35,10 +37,14 @@ setText(newText)
       Speech.lang = 'en'; // Correct the language code to 'en' for English
       Speech.text = message;
       window.speechSynthesis.speak(Speech);
+
+      props.showsAlert("Translating","Success");
     };
     
     const handleRSClick = () => {
       let newText = text.replace(/[^a-zA-Z ]/g, "");
+
+      props.showsAlert("All Special characters are removed","Success");
       setText(newText);
     }
   
