@@ -82,14 +82,14 @@ setText(newText)
   </div>
 
   <div className="container">
-<button className="btn btn-primary mx-2" onClick={handleUpClick}>ConvertToUppercase</button>
+<button className="btn btn-primary mx-2 my-1" onClick={handleUpClick}>ConvertToUppercase</button>
 
 
-<button className="btn btn-primary mx-2" onClick={handleLoClick}>ConvertToLowercase</button>
-<button className="btn btn-primary mx-2" onClick={handleClClick}>Clear</button>
+<button className="btn btn-primary mx-2 my-1" onClick={handleLoClick}>ConvertToLowercase</button>
+<button className="btn btn-primary mx-2 my-1" onClick={handleClClick}>Clear</button>
 
-<button className="btn btn-primary mx-2" onClick={handleSpClick}>Listen</button>
-<button className="btn btn-primary my-2" onClick={handleRSClick}>Remove Special Character</button>
+<button className="btn btn-primary mx-2 my-1" onClick={handleSpClick}>Listen</button>
+<button className="btn btn-primary my-2 my-1" onClick={handleRSClick}>Remove Special Character</button>
 
 </div>
 
@@ -98,7 +98,7 @@ setText(newText)
 
   <h1>Your Text Summary</h1>
   <p>{0.008*(text.split(" ").length)} Minutes you can read</p>
-  <p>{text.split(" ").length-1} words and {text.length} characters</p>
+  <p>{text.split(" ").filter((arr_element)=>{return arr_element.length!==0}).length} words and {text.length} characters</p>
   <h2>PREVIEW</h2>
   <p>{text}</p>
 </div>
