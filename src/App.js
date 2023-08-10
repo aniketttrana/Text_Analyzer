@@ -21,11 +21,11 @@ function App() {
 
   return (
     <>
-<Navbar title ="TextUtils" Home="MyHome"/>
+<Navbar title ={' Text  Utility'} Home="MyHome" />
 <Alert alert={alert}/>
 <div className="container my-5"> 
 {/* my-3 upar se neeche aajaega */}
-<TextForm showsAlert={showsAlert} heading2="Enter your Text here"/>
+<TextForm showsAlert={showsAlert} heading2=<strong>Enter Your Text Below</strong>/>
 
 </div>
 

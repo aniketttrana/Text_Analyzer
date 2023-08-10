@@ -55,7 +55,7 @@ setText(newText)
     console.log("On change");
     setText(event.target.value)
   }
-  const [text,setText]=useState('Enter ymmmour text here');
+  const [text,setText]=useState('*****Enter your text here*****');
   // const [text,setText]=useState('Enter ymmmour text here');
 // text="Please enter"  Wrong way to change the state
 // setText("new text") 
@@ -63,7 +63,7 @@ setText(newText)
     
  <>
 
-  <div className="mb-3">
+  <div className="border border-decondary border border-4">
     <label htmlFor="exampleFormControlTextarea1" className="form-label">
      {props.heading2}
     </label>
