@@ -97,7 +97,7 @@ setText(newText)
 <div className="conatiner">
 
   <h1>Your Text Summary</h1>
-  <p>{0.008*(text.split(" ").length)} Minutes you can read</p>
+  <p>{0.008*(text.split('@').length)} Minutes you can read</p>
   <p>{text.split(" ").filter((arr_element)=>{return arr_element.length!==0}).length} words and {text.length} characters</p>
   <h2>PREVIEW</h2>
   <p>{text}</p>
