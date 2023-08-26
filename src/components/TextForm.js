@@ -64,13 +64,25 @@ export default function TextForm(props) {
 
   return (
     <>
+      <h1 className="text-center">ENTER YOUR TEXT BELOW</h1>
       <div
         className="border border-dark border-4 p-3"
         onClick={handleTextClick}
       >
-        <div className="text-center mt-2 h1">
-          <strong>Enter your text Below</strong>
+        <div className="marquee-container">
+          <marquee behavior="scroll" direction="left" className="marquee-text">
+          <strong>
+
+            To perform Various task in you text like : Listen the text , Remove
+            special Characters in your text , Uppercase , Lowercase , Remove
+            Extra Spaces , Analyze the timing of reading the text and many more
+            </strong>
+          </marquee>
         </div>
+
+        {/* moving */}
+
+        {/* moving */}
 
         {/* <label htmlFor="exampleFormControlTextarea1" className="form-label">
           {props.heading2}

@@ -20,14 +20,14 @@ function App() {
 
   return (
     <>
-      <Navbar title={" Text  Analyzer"} Home="MyHome" />
+      <Navbar
+        title={" Text Analyzer : Your TEXT BUDDY in just one Go"}
+        Home="MyHome"
+      />
       <Alert alert={alert} />
       <div className="container my-5">
         {/* my-3 upar se neeche aajaega */}
-        <TextForm
-          showsAlert={showsAlert}
-          heading2=<strong>Enter Your Text Below</strong>
-        />
+        <TextForm showsAlert={showsAlert} />
       </div>
     </>
   );
