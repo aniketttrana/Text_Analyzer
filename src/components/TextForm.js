@@ -71,11 +71,10 @@ export default function TextForm(props) {
       >
         <div className="marquee-container">
           <marquee behavior="scroll" direction="left" className="marquee-text">
-          <strong>
-
-            To perform Various task in you text like : Listen the text , Remove
-            special Characters in your text , Uppercase , Lowercase , Remove
-            Extra Spaces , Analyze the timing of reading the text and many more
+            <strong>
+              To perform Various task in you text like : Listen the text ,
+              Remove special Characters in your text , Uppercase , Lowercase ,
+              Analyze the timing of reading the text and many more
             </strong>
           </marquee>
         </div>
