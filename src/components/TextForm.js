@@ -78,14 +78,6 @@ export default function TextForm(props) {
             </strong>
           </marquee>
         </div>
-
-        {/* moving */}
-
-        {/* moving */}
-
-        {/* <label htmlFor="exampleFormControlTextarea1" className="form-label">
-          {props.heading2}
-        </label> */}
         <textarea
           className="form-control"
           // hooks
