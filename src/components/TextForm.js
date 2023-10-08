@@ -113,16 +113,27 @@ export default function TextForm(props) {
       </div>
 
       <div className="conatiner">
-        <h1>Your Text Summary</h1>
-        <p>{0.008 * text.split(" ").length} Minutes you can read</p>
+        <h1>Your Text Summary</h1>       
+        {/* 1 min we can read 125 words so , 1 word =0.008 min
+         */}
+        {/* split" " will differ it with space = 1 word*/}
         <p>
           {
+
+            // we defined filter to remove that extra element in array
+            // split(/\s+/ ) take enter also new line, and space
+            //  it is a reg expression 
             text.split(/\s+/).filter((arr_element) => {
-              return arr_element.length !== 0;
-            }).length
-          }{" "}
+              return arr_element.length !== 0
+            }).length}
+            
+            {" "}
           words and {text.length} characters
         </p>
+
+        <p>{0.008 * text.split(" ").filter((element)=>{
+          return element.length!==0}).length}
+        Minutes you can read</p>
         <h2>PREVIEW</h2>
         <p>{text}</p>
       </div>
